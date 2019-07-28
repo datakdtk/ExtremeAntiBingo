@@ -10,7 +10,7 @@
 #
 
 class OutputNumber < ApplicationRecord
-  EXCLUSION_COUNT = 25
+  EXCLUSION_COUNT = 30
   NUMBER_RANGE = 1 .. 75
 
   validates :number, inclusion: { in: (NUMBER_RANGE)}
