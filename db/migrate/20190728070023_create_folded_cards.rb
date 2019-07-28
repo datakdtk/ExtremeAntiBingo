@@ -4,7 +4,6 @@ class CreateFoldedCards < ActiveRecord::Migration[5.2]
       t.string :player_name, null: false
       t.integer :open_count, null: false
       t.integer :folded_turn, null: false
-      t.boolean :busted, null: false
       t.timestamps
     end
   end

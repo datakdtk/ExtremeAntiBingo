@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 2019_07_28_070023) do
     t.string "player_name", null: false
     t.integer "open_count", null: false
     t.integer "folded_turn", null: false
-    t.boolean "busted", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

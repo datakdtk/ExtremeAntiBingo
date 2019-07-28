@@ -6,7 +6,6 @@
 #  player_name :string(255)      not null
 #  open_count  :integer          not null
 #  folded_turn :integer          not null
-#  busted      :boolean          not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #
