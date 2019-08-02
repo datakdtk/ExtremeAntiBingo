@@ -13,7 +13,6 @@
 ActiveRecord::Schema.define(version: 2019_07_28_070023) do
 
   create_table "folded_cards", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
-    t.string "player_name", null: false
     t.integer "open_count", null: false
     t.integer "folded_turn", null: false
     t.datetime "created_at", null: false

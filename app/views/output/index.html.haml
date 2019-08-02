@@ -61,14 +61,14 @@
   %table.table.table-bordered 
     %thead
       %tr
-        %th 名前
+        %th カード番号
         %th 開いたマス
         %th ストップターン
     %tbody
       - @folded_cards[0 .. 9].each do |c|
         %tr
-          %th
-            = c.player_name
+          %td
+            = c.id
           %td
             = c.open_count
           %td

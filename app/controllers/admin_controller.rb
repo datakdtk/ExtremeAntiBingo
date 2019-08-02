@@ -5,7 +5,6 @@ class AdminController < ApplicationController
 
   def post_card
     st_params = params.require(:folded_card).permit(:id, :open_count, :folded_turn)
-    st_params[:player_name] = "hoge"
     card = FoldedCard.find_or_initialize_by st_params
     card.save!
     redirect_to action: :index, msg: "カードを登録しました"
