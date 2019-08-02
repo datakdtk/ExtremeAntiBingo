@@ -1,0 +1,18 @@
+%p= @msg
+
+%div
+  = link_to "次のターン",  admin_next_turn_path, method: :post
+
+%div
+= form_with model: FoldedCard.new, url: :admin_cards do |f|
+  カード番号
+  = f.text_field :id
+  空いたマス
+  = f.text_field :open_count
+  ストップしたターン
+  = f.text_field :folded_turn
+  = f.submit 
+  
+
+%div
+  = link_to "ゲームを初期化する",  admin_initialize_game_path, method: :post
