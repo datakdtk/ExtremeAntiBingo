@@ -1,7 +1,7 @@
 %p= @msg
 
 %div
-  = link_to "次のターン",  admin_next_turn_path, method: :post
+  = button_to "次のターン",  admin_next_turn_path, method: :post
 
 %div
 = form_with model: FoldedCard.new, url: :admin_cards do |f|
@@ -15,4 +15,4 @@
   
 
 %div
-  = link_to "ゲームを初期化する",  admin_initialize_game_path, method: :post
+  = button_to "ゲームを初期化する",  admin_initialize_game_path, method: :post
