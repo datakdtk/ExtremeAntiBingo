@@ -14,7 +14,8 @@ class AdminController < ApplicationController
 
   def next_turn
     OutputNumber.go_next_turn
-    redirect_to action: :index, msg: "第#{OutputNumber.current_turn}ターンです"
+    last_num = OutputNumber.last.number
+    redirect_to action: :index, msg: "#{last_num}がでました。第#{OutputNumber.current_turn}ターンです"
   end
 
   def initalize_game
